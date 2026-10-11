@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR | BY FIYIN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="fav.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="calculator">
+            <img src="fav.png" alt="">
+            <h1>HONEY-CALC</h1>
+            <div id="value-field">
+                <input type="text" name="input1" id="input1">
+                <input type="text" name="input2" id="input2">
+                <div class="output" id="screen">0</div>
+            </div>
+            <div class="operators">
+                <button id="btn-clear" onclick="clearScreen()">AC</button>
+                <button id="btn-add" onclick="setOperator('+')">+</button>
+                <button id="btn-sub" onclick="setOperator('-')">-</button>
+                <button id="btn-mult" onclick="setOperator('*')">X</button>
+                <button id="btn-div" onclick="setOperator('/')">÷</button>
+                <button id="btn-mod" onclick="setOperator('%')">%</button>
+                <button id="btn-equal" onclick="calculate()">=</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
